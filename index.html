@@ -1,23 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Jessica T Website</title>
 <style>
-    body {
-  background-image: url("background.jpeg");
-}
-    </style>
   <link rel="stylesheet" type="text/css" href="styles.css"
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #b3f7f7;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: center;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: center;
+  width: 25%;
+  background-color: #ffffff;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-<ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">About me</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">Extraa</a></li>
-</ul>
 
-<h1 style="text-align:center;">Coding is Fun!</h1>
-<p style="text-align:center;">Welcome to my website.</p>
-    
+<div class="header">
+  <h1>Jessica Tunick</h1>
+  <p>Hello! My name is Jessica and I am from Period 1 AP Computer Science. This website gives you a small window into my life.</p>
+</div>
+
+<div class="topnav">
+  <a href="http://127.0.0.1:50872/index.html">Home</a>
+  <a href="http://127.0.0.1:50872/portfolio.html">Portfolio</a>
+  <a href="http://127.0.0.1:50872/myfavorites.html">My Favorites</a>
+  <a href="http://127.0.0.1:50872/contact.html" style="float:right">Contact Me</a>
+</div>
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h1>Some of My Hobbies...</h1>
+    </div>
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h1>Cross Country/Track</h1>
+      <img src="campbelllogo.jpeg" alt="Campbell Logo">
+    <h5>I can't find any pictures of Campbell athletes so this will have to do. :)</h5>
+    </div>
+    <div class="card">
+      <h2></h2>
+      <h1>Reading</h1>
+        <h5>These are some of the best books I have read.</h5>
+        <img src="gonewiththewind.jpeg" style="width:275px; height:375px">
+        <img src="it.jpeg" style="width: 275px; height:375px">
+        <img src="godfather.jpeg" style="width: 275px; height:375px">
+        <img src="thestand.jpeg" style="width: 275px; height:375px">
+    </div>
+      <div class="card">
+      <h1>Space!</h1>
+          <h4>I love learning about space! It's very intriguing how vast it is.</h4>
+          <img src="space.jpeg" style="width:500px; height:400px">
+          <h5>This image was taken by the Hubble Space Telescope. The telescope was pointed at a dark spot in the sky for many months and captured this picture.</h5>
+      </div>
+      </div>
+  </div>
+</div>
+
 </body>
 </html>
